@@ -16,10 +16,21 @@
     <string name="select_food">Select Food: </string>
 
     <string name="create_food_txt">Create Food</string>
+    <string name="meals">Meals</string>
+
+    <string name="list_item">List Item</string>
+    <string name="date_lbl_txt">Date: </string>
+    <string name="time_lbl_txt">Time: </string>
+    <string name="date_fmt">MM/DD/YYYY</string>
+    <string name="time_fmt">00:00 AM/PM</string>
 
     <string name="submit_btn_txt">Submit</string>
     <string name="add_btn_txt">Add</string>
+    <string name="edit_btn_txt">Edit</string>
+    <string name="back_btn_txt">Back</string>
     <string name="cancel_btn_txt">Cancel</string>
+    <string name="exit_btn_txt">Exit</string>
+    <string name="del_btn_txt">Delete</string>
 
 
 </resources>

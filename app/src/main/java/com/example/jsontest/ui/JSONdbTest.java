@@ -1,4 +1,4 @@
-package com.example.jsontest.database;
+package com.example.jsontest.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
