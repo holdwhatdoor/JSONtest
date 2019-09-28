@@ -4,6 +4,7 @@
     <string name="app_title">Nutrition Tracker</string>
     <string name="meal_title">Meal: </string>
     <string name="food_title">Food: </string>
+    <string name="portion">Portion: </string>
 
     <string name="food_lbl_txt">Food Name: </string>
     <string name="meas_type">Measure Type: </string>
