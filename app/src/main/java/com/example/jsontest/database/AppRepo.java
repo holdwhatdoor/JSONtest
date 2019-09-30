@@ -27,18 +27,54 @@ public class AppRepo {
         return repoInstance;
     }
 
-    // Gets all database repository information
+    // AppRepo constructor with context parameter returning all data in database
     private AppRepo(Context context) {
         mDb = AppDB.getInstance(context);
         mFoods = getAllFoods();
         mMeals = getAllMeals();
     }
 
+    // LiveData getter methods
     private LiveData<List<Food>> getAllFoods() {
         return mDb.foodDAO().getAll();
     }
     private LiveData<List<Meal>> getAllMeals() {
         return mDb.mealDAO().getAll();
+    }
+
+    // Getter methods by object Id
+    public Food getFoodById(int foodId) { return mDb.foodDAO().getFoodById(foodId); }
+    public Meal getMealById(int mealId) { return mDb.mealDAO().getMealById(mealId); }
+
+    // Insert methods
+    public void insertFood(final Food food) {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() { mDb.foodDAO().insert(food); }
+        });
+
+    }
+
+    public void insertMeal(final Meal meal) {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() { mDb.mealDAO().insert(meal); }
+        });
+    }
+
+    // Delete methods
+    public void deleteFood(final Food food) {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() { mDb.foodDAO().delete(food); }
+        });
+    }
+
+    public void deleteMeal(final Meal meal) {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() { mDb.mealDAO().delete(meal); }
+        });
     }
 
 }

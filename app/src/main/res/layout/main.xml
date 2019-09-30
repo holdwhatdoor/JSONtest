@@ -61,6 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
+                    android:padding="10dp"
                     android:text="@string/create_food_txt"
                     android:textSize="20dp"
                     android:clickable="true"/>
@@ -71,6 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
+                    android:padding="10dp"
                     android:text="@string/meals"
                     android:textSize="20dp"
                     android:clickable="true"/>

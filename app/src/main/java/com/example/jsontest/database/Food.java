@@ -13,25 +13,28 @@ public class Food {
     private double carbs;
     private double pro;
     private double fat;
+    private String baseMeas;
 
     @Ignore
     public Food(){}
 
     @Ignore
-    public Food(String name, double cals, double carbs, double pro, double fat){
+    public Food(String name, double cals, double carbs, double pro, double fat, String baseMeas){
         this.name = name;
         this.cals = cals;
         this.carbs = carbs;
         this.pro = pro;
         this.fat = fat;
+        this.baseMeas = baseMeas;
     }
 
-    public Food(int foodId, String name, double cals, double carbs, double pro, double fat){
+    public Food(int foodId, String name, double cals, double carbs, double pro, double fat, String baseMeas){
         this.foodId = foodId;
         this.name = name;
         this.cals = cals;
         this.carbs = carbs;
         this.fat = fat;
+        this.baseMeas = baseMeas;
     }
 
     public int getFoodId() {
@@ -81,4 +84,8 @@ public class Food {
     public void setFat(double fat) {
         this.fat = fat;
     }
+
+    public String getBaseMeas(){ return baseMeas; }
+
+    public void setBaseMeas(String baseMeas) { this.baseMeas = baseMeas; }
 }
