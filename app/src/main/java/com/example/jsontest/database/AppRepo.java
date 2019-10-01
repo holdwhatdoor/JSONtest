@@ -70,6 +70,15 @@ public class AppRepo {
         });
     }
 
+    public void deleteAllFood() {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                mDb.foodDAO().deleteAll();
+            }
+        });
+    }
+
     public void deleteMeal(final Meal meal) {
         executor.execute(new Runnable() {
             @Override

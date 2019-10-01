@@ -15,6 +15,7 @@ public class MealsViewModel extends AndroidViewModel {
     public LiveData<List<MealsActivity>> mMeals;
 
     public MealsViewModel(@NonNull Application application) {
+
         super(application);
     }
 }

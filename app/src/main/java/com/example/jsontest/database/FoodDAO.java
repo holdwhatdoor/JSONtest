@@ -24,4 +24,7 @@ public interface FoodDAO {
     @Query("SELECT * FROM food_table ORDER BY foodId")
     LiveData<List<Food>> getAll();
 
+    @Query("DELETE FROM food_table")
+    int deleteAll();
+
 }
